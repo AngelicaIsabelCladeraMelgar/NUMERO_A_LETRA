@@ -21,5 +21,20 @@ namespace UnitTestNumeroaletra
             Assert.AreEqual(expected, result);
 
         }
+        [TestMethod]
+        public void TestLiteralGet2()
+        {
+            //Arrange
+            LiteralController literalController = new LiteralController();
+            int numero = 1204;
+            string expected = "MIL DOSCIENTOS CUATRO";
+
+            //Act
+            string result = literalController.LiteralGet(numero);
+
+            //Assert
+            Assert.AreEqual(expected, result);
+
+        }
     }
 }
